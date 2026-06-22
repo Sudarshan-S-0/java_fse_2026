@@ -1,0 +1,5 @@
+Output:
+ Logger Created
+ Hello
+ buddy
+ are the loggers l1 and l2 same? true

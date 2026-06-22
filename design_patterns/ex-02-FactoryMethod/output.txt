@@ -1,0 +1,4 @@
+Output:
+ Opening word doc
+ Opening pdf doc
+ Opening excel doc
