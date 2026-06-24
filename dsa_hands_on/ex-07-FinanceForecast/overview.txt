@@ -1,0 +1,15 @@
+Recursive algorithm
+->Recursion is a technique in which a method calls itself again and again to solve a problem. 
+->It works by breaking a large problem into smaller chunks of the same type until a base case is reached. 
+->The base case stops further recursive calls and prevents infinite recursion.
+->It simplifies problems that have a repetitive structure,
+    such as factorial calculation, 
+    Fibonacci series generation, t
+    tree traversal, and so on.
+->In financial forecasting,
+    the future value for a given year can be calculated using the value from the previous year, 
+    making recursion a natural and intuitive solution.
+->Time complexity is O(n)
+    Reason: It recursively calls itself based on 'n' years.
+->Space complexity is also O(n)
+    Reason: In each recursive call is stored in the call stack until the recursion completes.
