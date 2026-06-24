@@ -1,0 +1,7 @@
+Big O notation
+-> This measures algorithm efficiency
+-> Best case provides the minimum operations to achieve OUTPUT
+-> Average case provides typical operations to achieve OUTPUT
+-> Worst case provides maximum operations to achieve OUTPUT
+-> Linear search searches element in the given order of efficiency -> O(1)
+-> Binary search removes half of element at each step of efficiency -> O(log n)
