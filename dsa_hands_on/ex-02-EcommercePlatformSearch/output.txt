@@ -1,0 +1,5 @@
+OUTPUT:
+  Linear Search:
+  Refrigerator
+  Binary Search:
+  Keyboard
