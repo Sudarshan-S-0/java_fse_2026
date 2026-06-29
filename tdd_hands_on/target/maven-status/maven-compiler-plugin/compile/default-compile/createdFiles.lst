@@ -1,0 +1,5 @@
+com\cognizant\logging\Slf4jDemo.class
+com\cognizant\service\UserRepository.class
+com\cognizant\controller\UserController.class
+com\cognizant\calculator\Calculator.class
+com\cognizant\service\UserService.class
