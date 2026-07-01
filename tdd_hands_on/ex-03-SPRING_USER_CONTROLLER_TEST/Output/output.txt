@@ -1,0 +1,36 @@
+Output:
+========================================
+  USER CONTROLLER DEMO - Exercise 3
+========================================
+
+1. Listing All Users:
+   - Alice
+   - Bob
+   - Charlie
+
+2. Getting User by ID (ID=2):
+   Found user: Bob
+
+3. Creating New User (Diana):
+   Result: User created successfully
+
+4. Listing All Users After Creation:
+   - Alice
+   - Bob
+   - Charlie
+   - Diana
+
+5. Deleting User (ID=1):
+   Result: User deleted successfully
+
+6. Listing All Users After Deletion:
+   - Bob
+   - Charlie
+   - Diana
+
+7. Testing Validation (Empty Username):
+   Result: Failed to create user
+
+========================================
+ ALL USER CONTROLLER TESTS COMPLETED!
+========================================

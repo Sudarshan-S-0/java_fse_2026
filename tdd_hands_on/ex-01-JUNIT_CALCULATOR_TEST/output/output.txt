@@ -1,0 +1,34 @@
+Output:
+========================================
+    CALCULATOR DEMO - Exercise 1
+========================================
+
+1. Addition Test:
+   15 + 25 = 40
+
+2. Subtraction Test:
+   50 - 20 = 30
+
+3. Multiplication Test:
+   7 * 8 = 56
+
+4. Division Test:
+   100 / 5 = 20
+
+5. Square Root Test:
+   √64 = 8.0
+
+6. Even Number Check:
+   Is 10 even? true
+   Is 7 even? false
+
+7. Factorial Test:
+   5! = 120
+
+8. Exception Handling:
+   Error: Cannot divide by zero
+   Error: Cannot calculate square root of negative number
+
+========================================
+    ALL CALCULATOR TESTS COMPLETED!
+========================================

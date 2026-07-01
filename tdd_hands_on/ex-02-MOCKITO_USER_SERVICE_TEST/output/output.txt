@@ -1,0 +1,41 @@
+Output:
+========================================
+  USER SERVICE DEMO - Exercise 2
+========================================
+
+1. Total User Count:
+   Count: 3
+
+2. Listing All Users:
+   - Alice
+   - Bob
+   - Charlie
+
+3. Getting User by ID (ID=2):
+   Found user: Bob
+
+4. Saving New User (Diana):
+   Result: Success
+
+5. Listing All Users After Save:
+   - Alice
+   - Bob
+   - Charlie
+   - Diana
+   New Count: 4
+
+6. Deleting User (ID=1):
+   Result: Success
+
+7. Listing All Users After Deletion:
+   - Bob
+   - Charlie
+   - Diana
+   New Count: 3
+
+8. Testing Validation (Empty Username):
+   Result: Failed - Validation Worked!
+
+========================================
+  ALL USER SERVICE TESTS COMPLETED!
+========================================
