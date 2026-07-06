@@ -1,0 +1,21 @@
+================================================
+Exercise 4: Maven Setup and Dependency Resolution
+================================================
+
+[INFO] Scanning for projects...
+[INFO] 
+[INFO] -------------------< com.library:LibraryManagement >--------------------
+[INFO] Building LibraryManagement 1.0-SNAPSHOT
+[INFO]   from pom.xml
+[INFO] --------------------------------[ jar ]---------------------------------
+[INFO] 
+[INFO] --- clean:3.2.0:clean (default-clean) @ LibraryManagement ---
+[INFO] 
+[INFO] --- resources:3.4.0:resources (default-resources) @ LibraryManagement ---
+[INFO] 
+[INFO] --- compiler:3.8.1:compile (default-compile) @ LibraryManagement ---
+[INFO] No sources to compile
+[INFO] ------------------------------------------------------------------------
+[INFO] BUILD SUCCESS
+[INFO] ------------------------------------------------------------------------
+Maven project builds successfully and all Spring dependencies (spring-context, spring-aop, spring-webmvc) are resolved.

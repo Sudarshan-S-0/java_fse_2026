@@ -1,0 +1,21 @@
+================================================
+Exercise 2: Dependency Injection
+================================================
+
+[BookService] BookRepository dependency injected via setter
+Spring context loaded successfully!
+
+Retrieved bookService bean from Spring context
+
+Verifying dependency injection...
+[BookService] Executing performBookOperation() method
+[BookService] Calling BookRepository.findAllBooks()
+[BookRepository] Executing findAllBooks() method
+[BookService] Successfully retrieved books from repository
+Result: Sample Books: 'Spring in Action', 'Effective Java', 'Clean Code'
+
+Dependency injection successful!
+
+Spring context closed successfully
+
+Exercise 2 execution completed!

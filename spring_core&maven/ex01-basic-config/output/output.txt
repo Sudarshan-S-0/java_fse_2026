@@ -1,0 +1,19 @@
+========================================
+Exercise 1: Basic Spring Configuration
+========================================
+
+Spring context loaded successfully!
+
+Retrieved bookRepository bean from Spring context
+
+BookRepository: Executing findAllBooks() method
+BookRepository: Retrieved books - Sample Books: 'The Great Gatsby', 'To Kill a Mockingbird', '1984'
+
+Retrieved bookService bean from Spring context
+
+BookService.displayMessage() executed
+BookService: Service bean has been successfully instantiated and is ready!
+
+Spring context closed successfully
+
+Exercise 1 execution completed!

@@ -1,20 +1,19 @@
-Output:
 ========================================
     LOGGING DEMO - Exercise 4
 ========================================
 
-[2026-07-01 11:45:55] [INFO] [LoggingDemo] - Starting Logging Demo Application
-[2026-07-01 11:45:55] [TRACE] [LoggingDemo] - This is a TRACE level message - most detailed
-[2026-07-01 11:45:55] [DEBUG] [LoggingDemo] - This is a DEBUG level message - for debugging
-[2026-07-01 11:45:55] [INFO] [LoggingDemo] - This is an INFO level message - general information
-[2026-07-01 11:45:55] [WARN] [LoggingDemo] - This is a WARN level message - potential issues
-[2026-07-01 11:45:55] [ERROR] [LoggingDemo] - This is an ERROR level message - error conditions
-[2026-07-01 11:45:55] [INFO] [LoggingDemo] - User john_doe attempted login 3 times
-[2026-07-01 11:45:55] [DEBUG] [LoggingDemo] - Action: UPDATE, Resource: user_profile, Duration: 150ms
-[2026-07-01 11:45:55] [DEBUG] [LoggingDemo] - Dividing 10 by 0
-[2026-07-01 11:45:55] [WARN] [LoggingDemo] - Attempted division by zero
-[2026-07-01 11:45:55] [ERROR] [LoggingDemo] - Error occurred during division operation - Cannot divide by zero
-[2026-07-01 11:45:55] [INFO] [LoggingDemo] - Logging Demo Application completed successfully
+[2026-07-06 14:36:03] [INFO] [LoggingDemo] - Starting Logging Demo Application
+[2026-07-06 14:36:03] [TRACE] [LoggingDemo] - This is a TRACE level message - most detailed
+[2026-07-06 14:36:03] [DEBUG] [LoggingDemo] - This is a DEBUG level message - for debugging
+[2026-07-06 14:36:03] [INFO] [LoggingDemo] - This is an INFO level message - general information
+[2026-07-06 14:36:03] [WARN] [LoggingDemo] - This is a WARN level message - potential issues
+[2026-07-06 14:36:03] [ERROR] [LoggingDemo] - This is an ERROR level message - error conditions
+[2026-07-06 14:36:03] [INFO] [LoggingDemo] - User john_doe attempted login 3 times
+[2026-07-06 14:36:03] [DEBUG] [LoggingDemo] - Action: UPDATE, Resource: user_profile, Duration: 150ms
+[2026-07-06 14:36:03] [DEBUG] [LoggingDemo] - Dividing 10 by 0
+[2026-07-06 14:36:03] [WARN] [LoggingDemo] - Attempted division by zero
+[2026-07-06 14:36:03] [ERROR] [LoggingDemo] - Error occurred during division operation - Cannot divide by zero
+[2026-07-06 14:36:03] [INFO] [LoggingDemo] - Logging Demo Application completed successfully
 
 ========================================
     ALL LOGGING TESTS COMPLETED!

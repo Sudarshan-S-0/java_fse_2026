@@ -17,8 +17,8 @@
         <maven.compiler.target>11</maven.compiler.target>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <junit.version>5.9.3</junit.version>
-        <mockito.version>5.3.1</mockito.version>
-        <spring.version>6.0.9</spring.version>
+        <mockito.version>5.3.1</mockito.version>                        
+        <spring.version>5.3.31</spring.version>
         <slf4j.version>2.0.7</slf4j.version>
     </properties>
     

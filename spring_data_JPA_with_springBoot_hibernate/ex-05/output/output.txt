@@ -1,0 +1,144 @@
+================================================
+Exercise 5: Spring Data JPA Country Management
+================================================
+
+Tomcat initialized with port 8080 (http)
+Started CountryManagementApplication in 5.081 seconds
+
+----- API TESTING LOG -----
+
+GET Request:
+URL: http://localhost:8080/api/v1/countries/IN
+
+GET Response:
+{
+    "coCode":  "IN",
+    "coName":  "India"
+}
+
+GET Request:
+URL: http://localhost:8080/api/v1/countries/search?name=Al
+
+GET Response:
+[
+    {
+        "coCode":  "AL",
+        "coName":  "Albania"
+    },
+    {
+        "coCode":  "DZ",
+        "coName":  "Algeria"
+    },
+    {
+        "coCode":  "AU",
+        "coName":  "Australia"
+    },
+    {
+        "coCode":  "BO",
+        "coName":  "Bolivia, Plurinational State of"
+    },
+    {
+        "coCode":  "BN",
+        "coName":  "Brunei Darussalam"
+    },
+    {
+        "coCode":  "CF",
+        "coName":  "Central African Republic"
+    },
+    {
+        "coCode":  "SV",
+        "coName":  "El Salvador"
+    },
+    {
+        "coCode":  "GQ",
+        "coName":  "Equatorial Guinea"
+    },
+    {
+        "coCode":  "FK",
+        "coName":  "Falkland Islands (Malvinas)"
+    },
+    {
+        "coCode":  "GI",
+        "coName":  "Gibraltar"
+    },
+    {
+        "coCode":  "GT",
+        "coName":  "Guatemala"
+    },
+    {
+        "coCode":  "HM",
+        "coName":  "Heard Island and McDonald Islands"
+    },
+    {
+        "coCode":  "IT",
+        "coName":  "Italy"
+    },
+    {
+        "coCode":  "MW",
+        "coName":  "Malawi"
+    },
+    {
+        "coCode":  "MY",
+        "coName":  "Malaysia"
+    },
+    {
+        "coCode":  "MV",
+        "coName":  "Maldives"
+    },
+    {
+        "coCode":  "ML",
+        "coName":  "Mali"
+    },
+    {
+        "coCode":  "MT",
+        "coName":  "Malta"
+    },
+    {
+        "coCode":  "MH",
+        "coName":  "Marshall Islands"
+    },
+    {
+        "coCode":  "NP",
+        "coName":  "Nepal"
+    },
+    {
+        "coCode":  "NC",
+        "coName":  "New Caledonia"
+    },
+    {
+        "coCode":  "NZ",
+        "coName":  "New Zealand"
+    },
+    {
+        "coCode":  "PW",
+        "coName":  "Palau"
+    },
+    {
+        "coCode":  "PS",
+        "coName":  "Palestine, State of"
+    },
+    {
+        "coCode":  "PT",
+        "coName":  "Portugal"
+    },
+    {
+        "coCode":  "SN",
+        "coName":  "Senegal"
+    },
+    {
+        "coCode":  "SO",
+        "coName":  "Somalia"
+    },
+    {
+        "coCode":  "SJ",
+        "coName":  "Svalbard and Jan Mayen"
+    },
+    {
+        "coCode":  "TV",
+        "coName":  "Tuvalu"
+    },
+    {
+        "coCode":  "WF",
+        "coName":  "Wallis and Futuna"
+    }
+]
