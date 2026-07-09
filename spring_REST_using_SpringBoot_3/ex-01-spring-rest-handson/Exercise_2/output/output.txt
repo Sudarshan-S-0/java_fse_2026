@@ -1,0 +1,12 @@
+Exercise 2 - Spring Learn Application - displayCountry()
+=========================================================
+Project: spring-learn (com.cognizant:spring-learn)
+
+Console Output (IntelliJ IDEA Run):
+-------------------------------------
+"C:\Program Files\Java\jdk-23\bin\java.exe" ...
+
+12:49:42.836 [main] INFO com.cognizant.spring_learn.SpringLearnApplication -- START: displayCountry()
+12:49:43.364 [main] INFO com.cognizant.spring_learn.SpringLearnApplication -- END: displayCountry()
+
+Process finished with exit code 0

@@ -1,0 +1,15 @@
+Exercise - Spring REST Get Country Based on Country Code
+=========================================================
+Project: spring-learn (com.cognizant:spring-learn)
+Spring Boot Version: 3.5.3
+Endpoint: GET /countries/{code}
+
+API Output (Postman - GET http://localhost:8080/countries/IN):
+--------------------------------------------------------------
+Status: 200 OK | 48 ms | 192 B
+
+Response Body (JSON):
+{
+    "code": "IN",
+    "name": "India"
+}

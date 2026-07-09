@@ -1,0 +1,26 @@
+Exercise - Spring REST JWT Authentication Service
+==================================================
+Project: spring-learn-jwt (com.cognizant:spring-learn-jwt)
+Endpoint: POST http://localhost:8080/authenticate
+
+API Output (Postman - POST http://localhost:8080/authenticate):
+---------------------------------------------------------------
+Auth Type: Basic Auth
+Username: user
+Password: ***
+Status: 200 OK | 602 ms | 475 B
+
+Response Body (JSON):
+{
+    "token": "eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJjc2VyIiwiaWF0IjoxNzUyMjUyMTEzLCJleHAiOjE3NTIyNTU3MTkuD6B2KejUI0HnxsIrsUex-aERsA8uiLJecsA8vC45WtQ"
+}
+
+Console Output (IntelliJ IDEA Run):
+-------------------------------------
+.a.www.BasicAuthenticationFilter     : Set SecurityContextHolder to UsernamePasswordAuthenticationToken
+urity.web.FilterChainProxy           : Secured POST /authenticate
+.AuthenticationController            : START: authenticate()
+.AuthenticationController            : Attempting to authenticate user: user
+.dao.DaoAuthenticationProvider       : Authenticated user
+.AuthenticationController            : Authentication successful for user: user
+.AuthenticationController            : END: authenticate() - Token generated for user: user

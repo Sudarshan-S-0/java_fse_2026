@@ -1,0 +1,27 @@
+Exercise - Spring REST Hello World
+====================================
+Project: spring-learn (com.cognizant:spring-learn)
+Spring Boot Version: 3.5.3
+Endpoint: GET /hello
+
+API Output (Browser - http://localhost:8080/hello):
+---------------------------------------------------
+Hello, World!!
+
+Console Output (IntelliJ IDEA Run):
+-------------------------------------
+:: Spring Boot ::                (v3.5.3)
+
+2025-07-11T14:21:05.049+05:30  INFO 27888 --- [spring-learn] [restartedMain] c.c.spring_learn.SpringLearnApplication  : Starting SpringLearnApplication
+2025-07-11T14:21:05.055+05:30  INFO 27888 --- [spring-learn] [restartedMain] c.c.spring_learn.SpringLearnApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-07-11T14:21:05.160+05:30  INFO 27888 --- [spring-learn] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active!
+2025-07-11T14:21:05.160+05:30  INFO 27888 --- [spring-learn] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting 'logging.level.web' to 'DEBUG'
+2025-07-11T14:21:06.617+05:30  INFO 27888 --- [spring-learn] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-11T14:21:06.617+05:30  INFO 27888 --- [spring-learn] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-11T14:21:06.617+05:30  INFO 27888 --- [spring-learn] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat]
+2025-07-11T14:21:06.688+05:30  INFO 27888 --- [spring-learn] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-11T14:21:06.688+05:30  INFO 27888 --- [spring-learn] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed
+2025-07-11T14:21:07.318+05:30  INFO 27888 --- [spring-learn] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-07-11T14:21:07.378+05:30  INFO 27888 --- [spring-learn] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-07-11T14:21:07.397+05:30  INFO 27888 --- [spring-learn] [restartedMain] c.c.spring_learn.SpringLearnApplication  : Started SpringLearnApplication
+2025-07-11T14:21:07.402+05:30  INFO 27888 --- [spring-learn] [restartedMain] c.c.spring_learn.SpringLearnApplication  : Spring Learn Application started.

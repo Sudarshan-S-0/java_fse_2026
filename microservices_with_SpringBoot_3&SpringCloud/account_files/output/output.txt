@@ -1,0 +1,16 @@
+Test Results - Account Microservice
+=====================================
+Project: account_files (com.cognizant:account)
+Build: SUCCESS
+Tests run: 1, Failures: 0, Errors: 0, Skipped: 0
+
+API Output (Postman - GET http://localhost:8080/accounts/123):
+--------------------------------------------------------------
+Status: 200 OK | 1.97 s | 217 B
+
+Response Body (JSON):
+{
+    "number": "00987987973432",
+    "type": "savings",
+    "balance": 234343
+}

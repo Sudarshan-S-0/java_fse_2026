@@ -1,0 +1,31 @@
+Exercise 1 - Spring Boot REST Application Startup
+===================================================
+Project: spring-learn (com.cognizant:spring-learn)
+Spring Boot Version: 3.5.3
+
+Console Output (IntelliJ IDEA Run):
+-------------------------------------
+"C:\Program Files\Java\jdk-23\bin\java.exe" ...
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+
+ :: Spring Boot ::                (v3.5.3)
+
+2025-07-11T12:12:30.996+05:30  INFO 11152 --- [spring-learn] [restartedMain] c.c.spring_learn.SpringLearnApplication  : Starting SpringLearnApplication using Java 23.0.2 with PID 11152
+2025-07-11T12:12:31.000+05:30  INFO 11152 --- [spring-learn] [restartedMain] c.c.spring_learn.SpringLearnApplication  : No active profile set, falling back to 1 default profile: "default"
+2025-07-11T12:12:31.124+05:30  INFO 11152 --- [spring-learn] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-07-11T12:12:31.124+05:30  INFO 11152 --- [spring-learn] [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-07-11T12:12:32.621+05:30  INFO 11152 --- [spring-learn] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port 8080 (http)
+2025-07-11T12:12:32.643+05:30  INFO 11152 --- [spring-learn] [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2025-07-11T12:12:32.643+05:30  INFO 11152 --- [spring-learn] [restartedMain] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.42]
+2025-07-11T12:12:32.705+05:30  INFO 11152 --- [spring-learn] [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2025-07-11T12:12:32.707+05:30  INFO 11152 --- [spring-learn] [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed
+2025-07-11T12:12:33.271+05:30  INFO 11152 --- [spring-learn] [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2025-07-11T12:12:33.320+05:30  INFO 11152 --- [spring-learn] [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port 8080 (http) with context path ''
+2025-07-11T12:12:33.333+05:30  INFO 11152 --- [spring-learn] [restartedMain] c.c.spring_learn.SpringLearnApplication  : Started SpringLearnApplication in 3.093 seconds (process running)
+2025-07-11T12:12:33.340+05:30  INFO 11152 --- [spring-learn] [restartedMain] c.c.spring_learn.SpringLearnApplication  : Spring Learn Application started.

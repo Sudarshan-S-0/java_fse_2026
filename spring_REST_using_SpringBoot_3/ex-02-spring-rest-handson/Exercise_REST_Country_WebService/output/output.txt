@@ -1,0 +1,15 @@
+Exercise - Spring REST Country Web Service
+==========================================
+Project: spring-learn (com.cognizant:spring-learn)
+Spring Boot Version: 3.5.3
+Endpoint: GET /country
+
+API Output (Postman - GET http://localhost:8080/country):
+---------------------------------------------------------
+Status: 200 OK | 307 ms | 192 B
+
+Response Body (JSON):
+{
+    "code": "IN",
+    "name": "India"
+}
