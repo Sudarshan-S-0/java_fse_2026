@@ -1,0 +1,36 @@
+========================================
+   ANGULAR HANDS-ON EXERCISE 4
+   Template-Driven Forms & Validation
+========================================
+Project Name: student-course-portal-4
+Framework: Angular 17+ (Standalone Architecture)
+
+1. Form Model & Structural Binding:
+   - [(ngModel)]: Two-way data binding on studentName, studentEmail, courseId, preferredSemester, agreeToTerms
+   - #enrollForm="ngForm": Template reference variable targeting NgForm instance
+   - #nameCtrl="ngModel", #emailCtrl="ngModel": Template references targeting individual control states
+
+2. Built-in Validation Rules Configured:
+   - studentName: required, minlength="3"
+   - studentEmail: required, email
+   - courseId: required
+   - preferredSemester: required
+   - agreeToTerms: required (must be checked)
+
+3. Error Message & Action Control:
+   - Conditional error display using *ngIf="control.invalid && control.touched"
+   - Submit button disabled when form is invalid: [disabled]="enrollForm.invalid"
+   - Form reset functionality using enrollForm.resetForm()
+
+4. Comments & Variable Name Checks:
+   - Cleaned up control names and added explicit comments on template-driven forms architecture.
+
+5. Simulated Execution Log:
+   - User inputs "Alice", "alice@example.com", Course ID 101, "Odd" semester, checks terms.
+   - Form Status: Valid = true, Touched = true, Dirty = true.
+   - Form Submitted Output: { studentName: "Alice", studentEmail: "alice@example.com", courseId: 101, preferredSemester: "Odd", agreeToTerms: true }
+   - Compilation: SUCCESS (0 errors).
+
+========================================
+   EXERCISE 4 VERIFICATION COMPLETED
+========================================

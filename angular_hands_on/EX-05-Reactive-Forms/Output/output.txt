@@ -1,0 +1,38 @@
+========================================
+   ANGULAR HANDS-ON EXERCISE 5
+   Reactive Forms & Custom Validation
+========================================
+Project Name: student-course-portal-5
+Framework: Angular 17+ (Standalone Architecture)
+
+1. Reactive Form Structure (FormBuilder):
+   - studentName: [Validators.required, Validators.minLength(3)]
+   - studentEmail: [Validators.required, Validators.email], asyncValidator: simulateEmailCheck
+   - courseId: [Validators.required, noCourseCode]
+   - preferredSemester: ['Odd', Validators.required]
+   - agreeToTerms: [false, Validators.requiredTrue]
+   - additionalCourses: FormArray for dynamic course input controls
+
+2. Custom Validators Implemented:
+   - Sync Validator `noCourseCode`: Rejects course IDs starting with 'XX'
+   - Async Validator `simulateEmailCheck`: Simulates backend check returning { emailTaken: true } for addresses containing 'test@'
+
+3. Dynamic Form Controls (FormArray):
+   - `additionalCourses` getter providing typed access to FormArray
+   - `addCourse()` pushes new FormControl with required validation
+   - `removeCourse(index)` removes dynamic control at specified index
+
+4. Value Access & Submission Logic:
+   - Difference between `.value` (enabled controls) vs `.getRawValue()` (includes disabled controls)
+   - Recursively marks all controls as touched (`markFormGroupTouched`) on invalid submission attempt.
+
+5. Simulated Execution Log:
+   - Added course 1: "CS102", Added course 2: "CS103"
+   - Async Validation Passed for "student@univ.edu"
+   - Form Submission Raw Value:
+     { studentName: "John Doe", studentEmail: "student@univ.edu", courseId: "CS101", preferredSemester: "Odd", agreeToTerms: true, additionalCourses: ["CS102", "CS103"] }
+   - Compilation: SUCCESS (0 errors).
+
+========================================
+   EXERCISE 5 VERIFICATION COMPLETED
+========================================

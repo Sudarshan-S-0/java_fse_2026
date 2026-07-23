@@ -1,0 +1,34 @@
+========================================
+   ANGULAR HANDS-ON EXERCISE 3
+   Directives & Custom Pipes
+========================================
+Project Name: student-course-portal-3
+Framework: Angular 17+ (Standalone Architecture)
+
+1. Structural Directives Applied:
+   - *ngIf: Toggles loading state spinner (`isLoading`) and handles empty list fallback
+   - *ngFor with trackBy: Iterates over courses array using `trackByCourseId` to optimize DOM updates
+   - [ngSwitch]: Renders status badge dynamically based on gradeStatus ('passed', 'failed', 'pending')
+
+2. Attribute Directives Applied:
+   - [ngClass]: Dynamically applies CSS classes based on condition (e.g. badge status colors)
+   - Custom Directive: HighlightDirective (`[appHighlight]`) changes element background color on mouse hover using @HostListener
+
+3. Custom Pipe Implemented:
+   - CreditLabelPipe (`creditLabel`): Transforms numeric credits into formatted strings:
+     - 0 -> "No Credits"
+     - 1 -> "1 Credit"
+     - N -> "N Credits"
+
+4. Refactorings & Comments:
+   - Added clear inline comments to HighlightDirective, CreditLabelPipe, and CourseListComponent.
+   - Preserved trackBy performance optimization function.
+
+5. Verification Log:
+   - Directive test: Mouse hover correctly highlights card background to yellow / custom color.
+   - Pipe test: 3 credits -> "3 Credits", 1 credit -> "1 Credit", 0 -> "No Credits".
+   - Compilation: SUCCESS (0 errors).
+
+========================================
+   EXERCISE 3 VERIFICATION COMPLETED
+========================================

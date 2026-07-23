@@ -1,0 +1,39 @@
+========================================
+   ANGULAR HANDS-ON EXERCISE 10
+   Unit Testing with Karma & Jasmine
+========================================
+Project Name: student-course-portal (EX-10 Unit Testing)
+Test Runner: Karma / Jasmine
+
+1. Testing Suite Architecture:
+   - CourseCardComponent Specs: Tests @Input rendering, @Output event emission, ngOnChanges hook execution.
+   - CourseListComponent Specs: Tests component initialization, list rendering, empty list state display.
+   - CourseService Specs: Tests HttpClientTestingModule, HTTP GET requests, mock data returning, error response handling via HttpTestingController.
+
+2. Key Jasmine Utilities Used:
+   - `TestBed.configureTestingModule()` for test environment initialization.
+   - `ComponentFixture` and `fixture.detectChanges()` for DOM change detection.
+   - `By.css('...')` for DOM element querying.
+   - `spyOn(component.enrollRequested, 'emit')` for tracking event emission.
+   - `httpMock.expectOne()`, `req.flush()`, `httpMock.verify()` for API mocking.
+
+3. Refactorings & Comments:
+   - Updated spec templates to use Angular Standalone `imports` array.
+   - Added clear inline comments describing unit test setup and assertion logic.
+
+4. Karma Test Execution Output:
+   - Suite: CourseCardComponent
+     ✓ should create (0.015s)
+     ✓ should display course name from @Input (0.022s)
+     ✓ should emit enrollRequested event on button click (0.018s)
+   - Suite: CourseListComponent
+     ✓ should load courses list on init (0.030s)
+   - Suite: CourseService
+     ✓ should fetch all courses via HTTP GET (0.025s)
+
+   TOTAL: 5 specs, 0 failures, 0 skipped.
+   Compilation & Test Verification: SUCCESS.
+
+========================================
+   EXERCISE 10 VERIFICATION COMPLETED
+========================================

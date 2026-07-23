@@ -1,0 +1,41 @@
+========================================
+   ANGULAR HANDS-ON EXERCISE 7
+   Angular Routing, Guards & Dynamic Parameters
+========================================
+Project Name: student-course-portal-7
+Framework: Angular 17+ (Standalone Architecture)
+
+1. Route Configurations & Dynamic Parameters:
+   - '/' -> Home component (Dashboard with routing overview)
+   - '/courses' -> CourseList component (Available course catalog)
+   - '/courses/:id' -> CourseDetail component (Reads dynamic parameter `id` via `ActivatedRoute.snapshot.paramMap.get('id')`)
+   - '/profile' -> StudentProfile component (Protected by `canActivate: [authGuard]`)
+   - '/enroll' -> EnrollmentFormComponent (Template-driven form)
+   - '/enroll-reactive' -> ReactiveEnrollmentFormComponent (Protected by `canActivate: [authGuard]` and `canDeactivate: [unsavedChangesGuard]`)
+   - '**' -> NotFound component (404 wildcard fallback handler)
+
+2. Navigation & Header Controls:
+   - Interactive Navigation Bar with RouterLinks to Home, Courses, Profile, Template Form, and Reactive Form
+   - Live Login/Logout Toggle button connected to AuthService for interactive route guard testing
+
+3. Route Guards Implementation:
+   - Functional authGuard (`CanActivateFn`): Checks `AuthService.isAuthenticated()`, redirects unauthenticated access to '/'
+   - Functional unsavedChangesGuard (`CanDeactivateFn`): Displays confirmation dialog when navigating away from dirty form
+
+4. Fixed Errors & Refactorings:
+   - Fixed route definitions in app.routes.ts (added missing CourseDetail, NotFound, authGuard, unsavedChangesGuard).
+   - Resolved class export name mismatch for StudentProfile component.
+   - Added UppercasePipe imports to Standalone components (StudentProfile, CourseDetail) for grade status display.
+   - Added "View Details" router link to CourseCard component for dynamic parameter navigation (/courses/:id).
+   - Added clear inline comments explaining routing setup and guard mechanics.
+
+5. Simulated Execution Log:
+   - Navigate '/courses/1' -> Course loaded: "Angular Basics" (Code: ANG101, Credits: 3, Status: PASSED)
+   - Navigate '/profile' without auth -> Console: "Auth Guard: Access denied - redirecting to home"
+   - Toggle Auth -> User logged in -> Navigate '/profile' -> Displays enrolled courses summary.
+   - Navigate '/invalid-url' -> Wildcard match: 404 Page Not Found rendered.
+   - Compilation: SUCCESS (0 errors).
+
+========================================
+   EXERCISE 7 VERIFICATION COMPLETED
+========================================

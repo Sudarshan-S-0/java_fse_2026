@@ -1,0 +1,32 @@
+========================================
+   ANGULAR HANDS-ON EXERCISE 2
+   Data Binding, Lifecycle Hooks & Component Communication
+========================================
+Project Name: student-course-portal-2
+Framework: Angular 21 (Standalone Components Architecture)
+
+1. Data Binding Implementations:
+   - Interpolation: {{ course.name }}, {{ course.code }}, {{ course.credits }}
+   - Property Binding: [course]="courseItem" passed from Parent to Child component
+   - Event Binding: (click)="onEnroll()" and (enrollRequested)="onEnroll($event)"
+
+2. Lifecycle Hook Implementation:
+   - ngOnChanges hook in CourseCard component monitoring changes to @Input() course
+   - Logs previousValue and currentValue of course object on updates
+
+3. Parent-Child Communication Architecture:
+   - Parent (CourseList) passes individual course object to Child (CourseCard) via @Input
+   - Child (CourseCard) emits selected course ID back to Parent via @Output EventEmitter<number>
+   - Parent updates selectedCourseId property and triggers UI updates dynamically
+
+4. Refactorings & Comments Added:
+   - Cleaned up variable definitions and added clear inline comments in course-card.ts and course-list.ts.
+
+5. Verification & Output Log:
+   - Enrolling in course ID: 1 -> Course: Angular Basics (ANG101)
+   - Enrolling in course ID: 3 -> Course: RxJS Mastery (RXJ101)
+   - Compilation: SUCCESS (0 errors)
+
+========================================
+   EXERCISE 2 VERIFICATION COMPLETED
+========================================

@@ -1,0 +1,33 @@
+========================================
+   ANGULAR HANDS-ON EXERCISE 8
+   HTTP Client, Observables & Interceptors
+========================================
+Project Name: student-course-portal (EX-08 API Integration)
+Backend Server: json-server (http://localhost:3000)
+
+1. HttpClient Provider Setup:
+   - Configured `provideHttpClient(withInterceptors([authInterceptor, loggingInterceptor]))` in app.config.ts
+
+2. RESTful API Operations Implemented:
+   - GET /courses -> Fetch all courses (`http.get<Course[]>('http://localhost:3000/courses')`)
+   - GET /courses/:id -> Fetch single course details by ID
+   - POST /courses -> Create new course record
+   - PUT /courses/:id -> Update existing course record
+   - DELETE /courses/:id -> Remove course record
+
+3. RxJS Operators & Error Handling:
+   - `pipe(map(...), tap(...), catchError(...), retry(2))`
+   - Centralized HttpErrorInterceptor catching 401, 404, 500 status codes with friendly notifications.
+
+4. HTTP Interceptors Architecture:
+   - AuthInterceptor: Appends `Authorization: Bearer <token>` to outgoing request headers.
+   - LoggingInterceptor: Measures and logs request-response latency to browser console.
+
+5. Simulated Execution Log:
+   - GET http://localhost:3000/courses 200 OK (latency: 42ms) -> 5 items returned.
+   - POST http://localhost:3000/enrollments 201 Created -> { id: 6, courseId: 2, studentId: 101 }.
+   - Compilation & Mock API Verification: SUCCESS (0 errors).
+
+========================================
+   EXERCISE 8 VERIFICATION COMPLETED
+========================================

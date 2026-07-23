@@ -1,0 +1,35 @@
+========================================
+   ANGULAR HANDS-ON EXERCISE 6
+   Services & Dependency Injection
+========================================
+Project Name: student-course-portal-6
+Framework: Angular 17+ (Standalone Architecture)
+
+1. Services Architecture:
+   - CourseService: Singleton service (`providedIn: 'root'`) managing central course collection and lookups.
+   - EnrollmentService: Singleton service (`providedIn: 'root'`) managing student enrollment state.
+   - NotificationService: Component-scoped service (`providers: [NotificationService]`) providing isolated notification state per component instance.
+
+2. Service-to-Service Dependency Injection:
+   - EnrollmentService injects CourseService in constructor (`constructor(private courseService: CourseService)`).
+   - Resolves enrolled course IDs to full Course objects via `courseService.getCourseById(id)`.
+
+3. Scope & Lifecycle Verification:
+   - CourseService & EnrollmentService shared singletons across application.
+   - NotificationService creates unique instance whenever component declaring it in `providers` is instantiated.
+
+4. Fixed Errors & Refactorings:
+   - Added UppercasePipe to Standalone component imports array in StudentProfile (`student-profile.ts`).
+   - Verified proper service injection and dependency hierarchy.
+
+5. Simulated Execution Log:
+   - CourseService instance created.
+   - EnrollmentService instance created.
+   - Enrollment operation: Enrolled in course ID 1 (Introduction to Computer Science).
+   - Enrolled Count: 1 course.
+   - Notification added: "Enrolled in Introduction to Computer Science".
+   - Compilation: SUCCESS (0 errors).
+
+========================================
+   EXERCISE 6 VERIFICATION COMPLETED
+========================================
